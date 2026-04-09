@@ -7,8 +7,10 @@
 </head>
 <body>
 
+  <!-- encabezado de la pagina con titulo y menu -->
   <header>
     <h1>🍳 Recetas de Comida</h1>
+    <!-- menu de navegacion con enlaces a cada seccion -->
     <nav>
       <menu>
         <li><a href="#inicio">Inicio</a></li>
@@ -19,40 +21,51 @@
     </nav>
   </header>
 
+  <!-- contenido principal de la pagina -->
   <main>
 
+    <!-- seccion de bienvenida -->
     <section id="inicio">
         <h2>Bienvenidos</h2>
         <p>Aca vas a encontrar recetas caseras faciles y ricas para el dia a dia. Sin complicaciones, con ingredientes de siempre.</p>
+        <!-- lista de caracteristicas -->
         <ul>
           <li>Recetas rapidas</li>
           <li>Ingredientes simples</li>
           <li>Paso a paso facil de seguir</li>
         </ul>
+        <!-- imagen de ejemplo -->
         <img src="comida.jpg" alt="comida" width="400">
+        <!-- enlace externo a otro sitio de recetas -->
         <p>Para ver mas recetas entra a <a href="https://www.recetasgratis.net" target="_blank">Recetas Gratis</a></p>
+      <!-- informacion extra al costado -->
       <aside>
         <h3>Consejo</h3>
         <p>Antes de arrancar lee toda la receta, asi no te falta nada.</p>
       </aside>
     </section>
 
+    <!-- seccion con las recetas -->
     <section id="recetas">
       <h2>Nuestras Recetas</h2>
+      <!-- primera receta -->
       <article>
         <h3>🍝 Fideos con Salsa de Tomate</h3>
         <p>Un clasico de siempre. Facil y listo en menos de 20 minutos.</p>
+        <!-- pasos numerados de la receta -->
         <ol>
           <li>Hervir agua con sal</li>
           <li>Cocinar los fideos 10 minutos</li>
           <li>Calentar la salsa de tomate</li>
           <li>Mezclar y servir con queso rallado</li>
         </ol>
+        <!-- video de youtube incrustado -->
         <iframe width="400" height="250"
           src="https://www.youtube.com/embed/bJUiWdM__Qw"
           allowfullscreen>
         </iframe>
       </article>
+      <!-- segunda receta -->
       <article>
         <h3>🥗 Ensalada Fresca</h3>
         <p>Liviana y lista en minutos. Ideal para los dias de calor.</p>
@@ -64,11 +77,13 @@
       </article>
     </section>
 
+    <!-- seccion con tabla de ingredientes -->
     <section id="tabla">
       <h2>Ingredientes</h2>
       <table border="1">
         <thead>
           <tr>
+            <!-- titulo que ocupa las 3 columnas con colspan -->
             <th colspan="3">Ingredientes por receta</th>
           </tr>
           <tr>
@@ -79,6 +94,7 @@
         </thead>
         <tbody>
           <tr>
+            <!-- rowspan hace que esta celda ocupe 3 filas -->
             <td rowspan="3">Fideos con Salsa</td>
             <td>Fideos</td>
             <td>200g</td>
@@ -92,6 +108,7 @@
             <td>a gusto</td>
           </tr>
           <tr>
+            <!-- rowspan hace que esta celda ocupe 3 filas -->
             <td rowspan="3">Ensalada Fresca</td>
             <td>Lechuga</td>
             <td>1 planta</td>
@@ -108,23 +125,30 @@
       </table>
     </section>
 
+    <!-- formulario para que el usuario mande su receta -->
     <section id="contacto">
       <h2>Mandanos tu receta</h2>
       <form action="#" method="POST">
 
+        <!-- campo de texto para el nombre -->
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
 
+        <!-- campo de email con validacion de formato -->
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" placeholder="tu@email.com" required>
 
+        <!-- campo para el nombre de la receta -->
         <label for="receta">Nombre de la receta:</label>
         <input type="text" id="receta" name="receta" placeholder="Ej: Milanesas a la napolitana" required>
 
+        <!-- area grande para escribir los ingredientes -->
         <label for="ingredientes">Ingredientes y preparacion:</label>
         <textarea id="ingredientes" name="ingredientes" rows="5" placeholder="Contanos como la haces..." required></textarea>
 
+        <!-- boton para enviar el formulario -->
         <button type="submit">Enviar</button>
+        <!-- boton para limpiar todos los campos -->
         <button type="reset">Limpiar</button>
 
       </form>
@@ -132,6 +156,7 @@
 
   </main>
 
+  <!-- pie de pagina -->
   <footer>
     <p>2026 - Recetas de Comida</p>
   </footer>
