@@ -1,0 +1,35 @@
+header{
+   background-color: #2E7D32;;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1{
+  font-family: "Oswald", sans-serif;
+  font-size: 60px;
+  color: #FF9800;
+  letter-spacing: 1px;
+}
+menu{
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  font-size: 40px;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1px;
+}
+a{
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: all 0.5s ease;
+}
+a:hover {
+  color: #254633;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  transform: scale(1.05s);
+}
+body{
+  background-color: #FFF8F0;
+}
