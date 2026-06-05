@@ -1,35 +1,171 @@
+:root {
+  /* Primarios */
+  --color-verde:       #2e7e32;
+  --color-beig:  #d9c3a1;
+  --color-naranja:   #FF9800;
+  --color-beigoscuro: #787569:
+}
+html {
+  scroll-padding-top: 100px; /* altura de tu header */
+}
+
 header{
-   background-color: #2E7D32;;
+   background: linear-gradient(1234deg, #2E7D32, #055326);
     padding: 20px;
+    margin: 10px;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
 }
 header h1{
   font-family: "Oswald", sans-serif;
   font-size: 60px;
   color: #FF9800;
   letter-spacing: 1px;
+  
 }
 menu{
   list-style: none;
   display: flex;
   gap: 20px;
-  font-size: 40px;
+  font-size: 30px;
   font-family: "Oswald", sans-serif;
   letter-spacing: 1px;
 }
 a{
   text-decoration: none;
   color: #FFFFFF;
-  transition: all 0.5s ease;
+    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
 }
 a:hover {
-  color: #254633;
+  text-decoration: underline;
+  text-decoration-color: #264427;
+  color: #ffffff;
   text-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
   transform: scale(1.05s);
 }
 body{
-  background-color: #FFF8F0;
+  background-color: #055326;
+}
+#inicio{
+  background-color: #2E7D32;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+#inicio h2{
+  color: #FF9800;
+  font-size: 40px;
+}
+#recetas{
+  background-color: #2E7D32;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+#recetas h2{
+  color: #FF9800;
+  font-size: 40px;
+}
+#tabla{
+  background-color: #2E7D32;
+  padding: 10px;
+  margin: 10px;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+#tabla h2{
+  color:#FF9800;
+  font-size: 40px;
+}
+table {
+  background-color: var(--color-beig);
+  color: #ffffff;
+  overflow: hidden;
+}
+table tr, th, td{
+  padding: 10px;
+}
+.fila{
+  background-color: var(--color-naranja);
+}
+#contacto{
+  background-color: #2E7D32;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+#contacto h2{
+  color: #FF9800;
+  font-size: 40px;
+}
+footer{
+  color: #2E7D32;
+}
+#contacto{
+  padding: 100px;
+}
+#contacto input{
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px 10px 30px 10px;
+}
+#contacto form{
+  background: linear-gradient(1234deg, var(--color-verde), #88E788);
+  padding: 20px;
+  border-radius: 10px;
+  border-bottom: 5px;
+  border-bottom-color: #000000;
+  border-bottom-style: solid;
+  align-items: center;
+  text-align: center;
+  
+}
+form textarea{
+  border-radius: 10px;
+  border-bottom: 5px;
+  border-bottom-color: #000000;
+  border-bottom-style: solid ;
+}
+#recetas ol{
+  background-color: var(--color-beig);
+  color: var(--color-naranja);
+  border-radius: 15px;
+  padding: 20px 20px 20px 40px;
+  border-bottom: 5px;
+  border-bottom-color: var(--color-naranja);
+  border-bottom-style: solid;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+#inicio{
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 20px;
+}
+aside{
+  background-color: var(--color-beig);
+  border-radius: 20px;
+  box-shadow: -5px 5px 20px #776e6e;
+  padding: 15px;
+  margin-bottom: 300px;
+}
+form input{
+  border-radius: 10px;
+  border-bottom: 5px;
+  border-bottom-color: #000000;
+  border-bottom-style: solid ;
 }
