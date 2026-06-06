@@ -1,12 +1,15 @@
 :root {
-  /* Primarios */
   --color-verde:       #2e7e32;
   --color-beig:  #d9c3a1;
   --color-naranja:   #FF9800;
-  --color-beigoscuro: #787569:
+  --color-beigoscuro: #787569;
+  --color-marron: #800000;
+  --color-azul: #024a86;
+  --color-magenta: #8c4966;
+  --color-naranjaoscuro: #f45120;
 }
 html {
-  scroll-padding-top: 100px; /* altura de tu header */
+  scroll-padding-top: 100px; 
 }
 
 header{
@@ -36,6 +39,7 @@ menu{
   font-family: "Oswald", sans-serif;
   letter-spacing: 1px;
 }
+
 a{
   text-decoration: none;
   color: #FFFFFF;
@@ -77,6 +81,11 @@ body{
   color: #FF9800;
   font-size: 40px;
 }
+.h2{
+  border-bottom: 5px;
+  border-bottom-color: var(--color-naranjaoscuro);
+  border-bottom-style:solid ;
+}
 #tabla{
   background-color: #2E7D32;
   padding: 10px;
@@ -97,8 +106,20 @@ table {
 table tr, th, td{
   padding: 10px;
 }
-.fila{
+.filados{
   background-color: var(--color-naranja);
+}
+.filatres{
+  background-color: var(--color-beigoscuro);
+}
+.filacuatro{
+  background-color: var(--color-marron);
+}
+.azul{
+  background-color: var(--color-azul);
+}
+.mag{
+  background-color: var(--color-magenta);
 }
 #contacto{
   background-color: #2E7D32;
@@ -168,4 +189,23 @@ form input{
   border-bottom: 5px;
   border-bottom-color: #000000;
   border-bottom-style: solid ;
+}
+@media (max-width: 768px) {
+  #inicio {
+    grid-template-columns: 1fr;
+  }
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 35px;
+  }
+
+  menu {
+    font-size: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

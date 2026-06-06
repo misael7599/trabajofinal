@@ -32,7 +32,7 @@
     <!-- seccion de bienvenida -->
     <section id="inicio">
       <div>
-        <h2>Bienvenidos</h2>
+        <h2 class="h2">Bienvenidos</h2>
         <p>Aca vas a encontrar recetas caseras faciles y ricas para el dia a dia. Sin complicaciones, con ingredientes de siempre.</p>
         <!-- lista de caracteristicas -->
         <ul>
@@ -54,7 +54,7 @@
 
     <!-- seccion con las recetas -->
     <section id="recetas">
-      <h2>Nuestras Recetas</h2>
+      <h2 class="h2">Nuestras Recetas</h2>
       <!-- primera receta -->
       <article>
         <h3>🍝 Fideos con Salsa de Tomate</h3>
@@ -86,46 +86,46 @@
 
     <!-- seccion con tabla de ingredientes -->
     <section id="tabla">
-      <h2>Ingredientes</h2>
-      <table border="1">
+      <h2  class="h2">Ingredientes</h2>
+      <table>
         <thead>
           <tr>
             <!-- titulo que ocupa las 3 columnas con colspan -->
             <th colspan="3">Ingredientes por receta</th>
           </tr>
           <tr>
-            <th>Receta</th>
-            <th>Ingrediente</th>
-            <th>Cantidad</th>
+            <th class="filados">Receta</th>
+            <th class="filados">Ingrediente</th>
+            <th class="filados">Cantidad</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <!-- rowspan hace que esta celda ocupe 3 filas -->
-            <td rowspan="3">Fideos con Salsa</td>
-            <td>Fideos</td>
+            <td class="filatres" rowspan="3">Fideos con Salsa</td>
+            <td class="azul">Fideos</td>
             <td>200g</td>
           </tr>
           <tr>
-            <td>Salsa de tomate</td>
+            <td class="azul">Salsa de tomate</td>
             <td>1 lata</td>
           </tr>
           <tr>
-            <td>Queso rallado</td>
+            <td class="azul">Queso rallado</td>
             <td>a gusto</td>
           </tr>
           <tr>
             <!-- rowspan hace que esta celda ocupe 3 filas -->
-            <td rowspan="3">Ensalada Fresca</td>
-            <td>Lechuga</td>
+            <td class="filacuatro" rowspan="3">Ensalada Fresca</td>
+            <td class="mag">Lechuga</td>
             <td>1 planta</td>
           </tr>
           <tr>
-            <td>Tomate</td>
+            <td class="mag">Tomate</td>
             <td>2 unidades</td>
           </tr>
           <tr>
-            <td>Zanahoria</td>
+            <td class="mag">Zanahoria</td>
             <td>1 unidad</td>
           </tr>
         </tbody>
@@ -134,8 +134,8 @@
 
     <!-- formulario para que el usuario mande su receta -->
     <section id="contacto">
-      <h2>Mandanos tu receta</h2>
-      <form action="#" method="POST">
+      <h2 class="h2">Mandanos tu receta</h2>
+      <form class="borde" action="#" method="POST">
 
         <!-- campo de texto para el nombre -->
         <label for="nombre">Nombre:</label>
@@ -151,7 +151,7 @@
 
         <!-- area grande para escribir los ingredientes -->
         <label for="ingredientes">Ingredientes y preparacion:</label>
-        <textarea id="ingredientes" name="ingredientes" rows="5" placeholder="Contanos como la haces..." required></textarea>
+        <textarea id="ingredientes" name="ingredientes" rows="2" placeholder="Contanos como la haces..." required></textarea>
 
         <!-- boton para enviar el formulario -->
         <button type="submit">Enviar</button>
